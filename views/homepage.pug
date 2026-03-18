@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Luffy Characters
+    a(href='/update-cobj') Add to this table
+    table
+      thead
+        tr
+          th Name
+          th Bounty
+          th Devil Fruit
+          th Crew
+      tbody
+        each character in characters
+          tr
+            td= character.properties.name
+            td= character.properties.bounty
+            td= character.properties.devil_fruit
+            td= character.properties.crew
