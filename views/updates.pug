@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/css/style.css')
+  body
+    h1 Update Custom Object Form
+    a(href='/') Return to the homepage
+    form(action='/update-cobj', method='POST')
+      div
+        label(for='name') Name:
+        input(type='text', id='name', name='name', required)
+      div
+        label(for='bounty') Bounty:
+        input(type='text', id='bounty', name='bounty')
+      div
+        label(for='devil_fruit') Devil Fruit:
+        input(type='text', id='devil_fruit', name='devil_fruit')
+      div
+        label(for='crew') Crew:
+        input(type='text', id='crew', name='crew')
+      button(type='submit') Submit
